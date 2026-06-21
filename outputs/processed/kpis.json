@@ -1,0 +1,52 @@
+{
+  "total_violations": 248371,
+  "parking_violations": 248371,
+  "date_start": "2023-11-10",
+  "date_end": "2024-04-08",
+  "n_police_stations": 54,
+  "n_junctions": 168,
+  "n_hotspots": 263,
+  "n_critical": 0,
+  "n_high": 8,
+  "junction_violation_share_pct": 50.3,
+  "peak_violation_share_pct": 28.8,
+  "concentration": {
+    "total_severity": 151522.9,
+    "hotspot_count": 263,
+    "severity_in_hotspots_pct": 96.1,
+    "severity_in_top20_pct": 62.7,
+    "top_k": 20
+  },
+  "coverage": {
+    "units_deployed": 12,
+    "zones_targeted": 12,
+    "severity_covered_pct": 54.7,
+    "critical_high_zones": 8,
+    "critical_high_violation_share_pct": 54.6
+  },
+  "risk_model": {
+    "n_train": 32760,
+    "n_test": 32760,
+    "cutoff_date": "2024-03-09",
+    "n_cells": 936,
+    "n_features": 25,
+    "mae": 0.1995,
+    "rmse": 0.7014,
+    "r2": 0.496,
+    "baseline_mae": 0.2782,
+    "baseline_rmse": 0.8729,
+    "mae_improvement_pct": 28.3,
+    "rmse_improvement_pct": 19.7,
+    "load_capture_top10pct": 0.703,
+    "baseline_capture_top10pct": 0.592,
+    "best_params": {
+      "learning_rate": 0.02,
+      "num_leaves": 31,
+      "min_child_samples": 80,
+      "subsample": 1.0,
+      "colsample_bytree": 0.7,
+      "reg_lambda": 1.0
+    }
+  },
+  "top_feature": "cell_dow_mean"
+}

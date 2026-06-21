@@ -1,0 +1,18 @@
+# Raw dataset (large; provided separately by the organisers)
+*violation_anonymized*.csv
+jan to may*.csv
+
+# Build bundle (redundant with the source)
+ParkSenseAI_submission.zip
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Build logs
+outputs/build_log*.txt
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
