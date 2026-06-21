@@ -103,7 +103,6 @@ def load_model():
     with open(C.RISK_MODEL_PKL, "rb") as f:
         return pickle.load(f)
 
-
 _ART = load_all()
 kpis = _ART["kpis"]
 hotspots = _ART["hotspots"]
@@ -118,8 +117,7 @@ def load_points():
 
 if kpis is None or hotspots is None:
     st.title("🅿️ ParkSense AI")
-    st.warning("Artefacts not found. Run the pipeline first:\n\n"
-               "```\npython src/build_all.py\n```")
+    st.warning("Required artefacts are missing. This dashboard runs from the prebuilt files in `outputs/`, so on Streamlit Cloud you should commit those generated files and set `app/dashboard.py` as the entrypoint.")
     st.stop()
 
 
